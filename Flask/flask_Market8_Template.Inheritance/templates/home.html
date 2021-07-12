@@ -1,0 +1,19 @@
+<!--
+    Using jinja syntax to inheritance the content inside 
+    the base.html
+split 2, 3 html file into different display 
+
+Then marking the postion in the html templete that we want to unique and 
+Change it in the inhenriate html file
+{% block title %}
+Custom anything you want inside here
+{% endblock %}
+-->
+{% extends 'base.html' %}
+{% block title1 %}
+    Home page
+{% endblock %}
+
+{% block content1 %}
+This is the content for the Home Page
+{% endblock %}

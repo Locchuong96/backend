@@ -1,0 +1,38 @@
+ {% extends 'base.html' %}
+ 
+ {% block title1 %}
+ Market page
+ {% endblock %}
+
+{% block content1 %} 
+<table class = "table table-honver table-dark">
+   <thread> 
+      <tr>
+         <!-- My columns HERE--> 
+         <th scope = 'col'>ID</th>
+         <th scope = 'col'>NAME</th>
+         <th scope = 'col'>BARCODE</th>
+         <th scope = 'col'>PRICE</th>  
+      <tr>
+   </thread>
+   <tbody>
+      <!-- Your rows inside the table here: -->
+      <!--Add New jinja systax here-->
+      {% for item in items %}
+         <tr>
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>  
+            <td>{{item.barcode}}</td>  
+            <td>{{item.price}} $</td>  
+            <td>
+               <button class =  "btn btn-outline btn-info">More Info</button>
+               <button class =  "btn btn-outline btn-success">Purchase this Item</button>
+            </td> 
+         </tr>
+      {% endfor %}
+      
+</table>
+ {% endblock %}
+
+
+    

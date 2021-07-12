@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang = 'en'>
+    <head>
+        <title>Home Page</title>
+        <style>
+            p.ex1{
+                margin-left: inherit;
+            }
+            div.ex2{
+                border: 1px solid red;
+                width: 300px;
+            }
+            div.ex3{
+                border: 1px solid red;
+                padding: 10px;
+                width: 300px;
+            }
+            div.ex4{
+                border: 1px solid red;
+                padding: 10px;
+                width: 300px;
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body>
+        <div class ='ex2'>
+            <p class= 'ex2'>TH1: Trường hợp phần tử div chỉ có width = 300</p>
+        </div>
+
+        <div class ='ex3'>
+            <p class= 'ex3'>TH2: Trường hợp phần tử div chỉ có width padding chung nhau</p>
+        
+        </div>
+
+        <em>Nhận xét: mặc dù width = 300 nhưng kt khác nhau, do có padding đặt chung </em>
+        
+        <div class ='ex4'>
+            <p class= 'ex3'>Xử lý bổ sung thuộc tính box sizing vào</p>
+        </div>
+    </body>
+</html>

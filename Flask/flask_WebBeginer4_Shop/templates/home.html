@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang = 'en'>
+    <head>
+        <title>Shop Home</title>    
+        <style>
+            p.outset {border-style: outset;}
+        </style>
+    </head>
+    <body>
+        {% for item  in items %}
+        <tr>
+            <p class ="outset">{{ items[item]['name'] }}, {{ items[item]['price'] }} $</p>
+        </tr>
+        {% endfor %}
+    </body>
+</html>
