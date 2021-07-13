@@ -1,0 +1,160 @@
+<!--
+    <form> Defines a html form for user input
+    <input> Defines a input control
+        <input type = 'text'> Display a single-line text input field
+        <input type = 'radio'> Display a radio button (for selecting one of many choises)
+        <input type = 'checkbox'> Display a checkbox (for selecting zero or more of many choises)
+        <input type = 'submit'> Display a submit button (for submitting the form)
+        <input type = 'button'> Display a clikcable button
+    <label> Defines a label for an <input> element
+    <select> Defines a drop-down list
+    <textarea> Defines a multiline input control (text area)
+    <button> Defines a clickable button
+    <fieldset> Groups related elements in a form
+    <legend> Defines a caption for a <fieldset> element
+    <datalist> Specifies a list of pre-defined options for input controls
+    <output> Defines the result of calculation
+    <option> Defines an option in a drop-down list
+    <optgroup> Defines a group of related
+-->
+<!doctype html>
+<html lang = 'en'>
+    <head>
+        <title>Home Page</title>
+    </head>
+    <body>
+        <p>1/Đây là form chứa 2 text</p>
+        <form>
+            <!--Add id make scense with the label, name such as var-->
+            <label for= 'fname'>First Name: </label>
+            <input type= 'text' id= 'fname' name='fname'> 
+            <br>
+            <label for= 'lname'>Last Name: </label>
+            <input type= 'text' id= 'lname' name= 'lname'>
+        </form>
+        <br>
+
+        <p>2/Đây là một form chứa các radio buttons chỉ được chọn một giá trị trong nhiều giá trị</p>
+        <from>
+            <!--for and id must be the same-->
+            <input type= 'radio' id= 'html' name= 'fav_language' value='HTML'>
+            <label for= 'html'>HTML</label>
+            <br>
+            <input type= 'radio' id= 'css' name= 'fav_language' value= 'CSS'>
+            <label for= 'css'>CSS</label>
+            <br>
+            <input type= 'radio' id= 'javascript' name= 'fav_language' value= 'JavaScript'>
+            <label for= 'javascript'>JavaScript</label>
+        </from>
+        
+        <p>3/Đây là một from chứa checkbox được chọn một số các giá trị</p>
+        <from>
+            <input type= 'checkbox' id= 'vehicle1' name= 'vehicle1' value= 'Bike'>
+            <label for= 'vehicle1'> I have a bike</label>
+            <br>
+            <input type= 'checkbox' id= 'vehicle2' name= 'vehicle2' value= 'Car'>
+            <label for= 'vehicle2'> I have a Car</label>
+            <br>
+            <input type= 'checkbox' id= 'vehicle3' name= 'vehicle3' value= 'Boat'>
+            <label for= 'vehicle3'> I have a boat</label>
+        </from>
+
+        <p>4/Đây là một form chứa submit button để submit form data tới một form-handler</p>
+        <from>
+            <label for='fname'>First name:</label>
+            <!--Attribute:
+                type : input type
+                id   : the id of input, follow the for
+                value: The default value of the input
+                name: is the name of this input
+            -->
+            <input type= 'text' id='fname' name= 'fname' value= 'John'>
+            <br>
+            <label for='lname'>Last name:</label>
+            <input type= 'text' id='lname' name= 'lname' value= 'Doe'>
+            <br>
+            <input type= 'submit' value = 'Submit'>
+        </from>
+
+        <p>5/Dưới đây là một droplist</p>
+        <label for='cars'>Choose a car:</label>
+        <select id='cars' name='cars'>
+            <option value= 'volvo'>Volvo</option>
+            <option value= 'saab'>Saab</option>
+            <!-- <option value= 'fiat' selected>Fiat</option>  -->
+            <option value= 'fiat'>Fiat</option>
+            <option value= 'audi'>Audi</option>
+        </select>
+
+        <p>6/Dưới đây là droplist có visible size</p>
+        <label for='cars'>Choose a car:</label>
+        <select id= 'cars' name='cars' size='2'>
+            <option value= 'volvo'>Volvo</option>
+            <option value= 'saab'>Saab</option>
+            <option value= 'fiat'>Fiat</option>
+            <option value= 'audi'>Audi</option>
+        </select>
+
+        <p>7/Dưới đây là droplist có visible size và cho phép multiple choise</p>
+        <label for='cars'>Choose a car:</label>
+        <select id= 'cars' name='cars' size='4' multiple>
+            <option value= 'volvo'>Volvo</option>
+            <option value= 'saab'>Saab</option>
+            <option value= 'fiat'>Fiat</option>
+            <option value= 'audi'>Audi</option>
+        </select>
+
+        <p>8/Dưới đây là một textarea định dạng bằng row và columns</p>
+        <textarea name='message' rows='10' cols='30'>
+            The cat was playing in the garden!
+        </textarea>
+
+        <p>9/Dưới đây là một textarea định dạng bằng width và height</p>
+        <textarea name ="message" style="width:200px;height:100px;">
+        The cat was playing in the garden
+        </textarea>
+
+        <p>10/Dưới đây là một button element</p>
+        <button type = 'button' onclick= "alert('Hello world')">Click me!</button>
+
+        <p>11/Dưới đây là một form</p>
+        <form action="/action_page.php">
+            <fieldset>
+              <legend>Personalia:</legend>
+              <label for="fname">First name:</label><br>
+              <input type="text" id="fname" name="fname" value="John"><br>
+              <label for="lname">Last name:</label><br>
+              <input type="text" id="lname" name="lname" value="Doe"><br><br>
+              <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+
+        <p>12/Dưới đây là một datalist định dạng lại một list thành một options</p>
+        <from action= '/action_page.php'>
+        <input list= 'browsers'>
+        <datalist id= 'browsers'>
+            <option value='Internet Explorer'>
+            <option value='Firefox'>
+            <option value='Chrome'>
+            <option value='Opera'>
+            <option value='Safari'>
+            <option value='Coccoc'>
+        </datalist>
+        <input type='submit'>
+        </from>
+
+        <p>13/Dưới đây là một output element</p>
+        <form action= '/action_page.php' oninput='x.value=parseInt(a.value) + parseInt(b.value)'>
+            0
+            <input type= 'range' id= 'a' name='a' value= '50'>
+            100 +
+            <input type= 'number' id= 'b' name= 'b' value= '50'>
+            =
+            <output name= 'x' for='a b'></output>
+            <br>
+            <br>
+            <input type= 'submit'>
+        </form>
+
+    </body>
+</html>
