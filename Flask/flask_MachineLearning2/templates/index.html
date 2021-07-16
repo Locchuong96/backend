@@ -1,0 +1,21 @@
+<!doctype  html>
+<html lang = 'en'>
+    <head>
+        <title>Predict Page</title>
+    </head>
+    <body>
+        <h3>Enter your infomation here</h3>
+        <!--Add the form here, post this form when you press submit button-->
+        <form action= "{{ url_for('predict') }}" method ="post" >
+        <!-- <form action = "/predict" method = 'post'> -->
+            <h4> Sales Forecasting </h4>
+            <input type= "text" name= "rate" placeholder= "rate" required="required">
+            <input type= "text" name= "sales in first month" placeholder= "sales in first month" required= "required">
+            <input type= "text" name= "sales in second month" placeholder= "sales in second month" required= "required">
+            <button type= 'submit'>Predict sales in third month</button>
+        </form>
+        <br>
+        <br>
+        {{ predict_text }}
+    </body>
+</html>
