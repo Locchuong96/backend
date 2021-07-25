@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            Submit new Store
+        </title>
+    </head>
+    <body>
+        <form action = "{{ url_for('add_store') }}" method ="post">
+            <input type = 'text' name = 'store_name' placeholder ='store_name' required = 'required'>
+            <br>
+            <input type = 'text' name = 'store_location' placeholder ='store_location' required = 'required'>
+            <br>
+            <button type = 'submit'>Submit</button>
+        </form>
+        {{ new_store }}
+    </body>
+</html>
