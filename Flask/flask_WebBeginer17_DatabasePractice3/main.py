@@ -14,7 +14,7 @@ class Author(db.Model):
     books = db.relationship("Book",backref = "author")
 
     def __repr__(self):
-        return f"Author(''{self.id}',{self.name}')"
+        return f"Author('{self.id}',{self.name}')"
 
 class Book(db.Model):
     id = db.Column(db.Integer,primary_key = True)
