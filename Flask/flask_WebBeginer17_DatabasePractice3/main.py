@@ -43,7 +43,7 @@ class Book_Schema(ma.SQLAlchemySchema):
     
     title = ma.auto_field()
     author_id = ma.auto_field()
-    author = ma.auto_field()
+    author = ma.auto_field() # You can do it bacause _include_sqlalchemy
 
 book_schema = Book_Schema()
 books_schema = Book_Schema(many = True)
