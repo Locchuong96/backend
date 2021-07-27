@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+    <head>
+        <title>BookResult</title>
+    </head>
+    <body>
+
+        <form action = "{{ url_for('search') }}" method = "get">
+            <button type = "submit">Return</button>
+        </form>
+
+        <h2>Books result:</h2>
+
+        <table border="3" width = "800">
+            <tr>
+                <td>No.</td>
+                <td>Author</td>
+                <td>Title</td>
+                <td>Price</td>
+                <td>Review</td>
+                <td>Comment</td>
+                <td>Submit</td>
+            </tr>
+            {% for i in range(count) %}
+            <tr>
+                <td> {{ i }} </td>
+                <td> {{ result[i].author }} </td>
+                <td> {{ result[i].title }} </td>
+                <td> {{ result[i].price }} $</td>
+                <td>
+                    <form>
+                        <input type= "radio" name= "review" id = 'one'>
+                        <label for "one">🌟</label>
+                        <input type= "radio" name= "review" id = 'two'>
+                        <label for "two">🌟</label>
+                        <input type= "radio" name= "review" id = 'three'>
+                        <label for "three">🌟</label>
+                        <input type= "radio" name= "review" id = 'four'>
+                        <label for "four">🌟</label>
+                        <input type= "radio" name= "review" id = 'five'>
+                        <label for "five">🌟</label>
+                    </form>
+                </td>
+                <td>
+                    <textarea name = "name" rows = "3" cols = "30" form = "usrform">Enter Comment</textarea> 
+                </td>
+                <td>
+                    <button type = "sbmit">Submit</button>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+        <!-- {{ result }} -->
+    </body>
+</html>
