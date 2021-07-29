@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Detele Page</title>
+    </head>
+    <body>
+        <h3>Delete Your Book</h3>
+        <form action = "{{ url_for('remove') }}" method = 'post'>
+            <input type = 'text' name = 'id' placeholder = 'id' required = 'required'>
+            <button type = 'submit'>Delete</button>
+        </form>
+    </body>
+</html>

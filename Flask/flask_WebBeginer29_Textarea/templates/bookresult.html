@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Result Page</title>
+    </head>
+    <body>
+        <h3>Your result:</h3>
+        <table border="3" width = '800'>
+            <tr>
+                <td>No</td>
+                <td>Title</td>
+                <td>Author</td>
+                <td>Quantity</td>
+                <td>Price</td>
+                <td>Comment</td>
+            </tr>
+            {% for i in range(count) %} 
+            <tr>
+                <td> {{ i }} </td>
+                <td>{{ result[i].title }}</td>
+                <td>{{ result[i].author }}</td>
+                <td>{{ result[i].quantity }}</td>
+                <td>{{ result[i].price }}</td>
+                <td>
+                    <textarea rows = '4' cols = '50'>{{ result[i].comment }}</textarea>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>

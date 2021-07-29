@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Update Page</title>
+    </head>
+    <body>
+        <h3>Update new book</h3>
+        <form action ="{{ url_for('update') }}" method = 'post'>
+            <input type = 'number' name = 'id' placeholder = 'id' required = 'required'>
+            <br>
+            <input type = 'text' name = 'title' placeholder = 'title'>
+            <br>
+            <input type = 'text' name = 'author' placeholder = 'author'>
+            <br>
+            <textarea name = 'comment' required = 'required' rows= 5 cols = 40>Comment</textarea>
+            <br>
+            <input type = 'number' name = 'quantity' placeholder = 'quantify'>
+            <br>
+            <input type = 'number' step = 0.01 name = 'price' placeholder = 'price'>
+            <br>
+            <button type = 'submit'>Submit</button>
+        </form>
+    </body>
+</html>

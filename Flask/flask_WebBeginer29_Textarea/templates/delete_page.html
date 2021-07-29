@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Search Page</title>
+    </head>
+    <body>
+        <h3>Search Your Book</h3>
+        <form action = "{{ url_for('remove') }}" method = 'post'>
+            <input type = 'number' name = 'id' placeholder = 'id' required = 'required'>
+            <button type = 'submit'>Submit</button>
+        </form>
+    </body>
+</html>
