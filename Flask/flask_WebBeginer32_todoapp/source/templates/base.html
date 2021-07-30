@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <!--Sematic UI add -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+		<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+		<!--Sematic UI done -->
+        <title>ToDo Page</title>
+    </head>
+    <body>
+
+        <h1 class= 'ui center aligned header'>ToDo App</h1>
+        <form class = 'ui field' action = "{{ url_for('create') }}" method = 'post'>
+            <label class = 'ui medium header' for='title'>ToDo Title</label>
+            <input type = 'text' name  = 'title' required = 'required' placeholder= "title">
+            <button class="ui teal button" type = 'submit'>Add task</button>
+        </form>
+
+        {% for todo in todo_list %}
+        <div class = 'ui segment'>
+            <p class = 'ui header'> {{ todo.id }} | {{ todo.title }} | {{ todo.date }} </p>
+                
+                {% if todo.complete %}
+                    <span class = 'ui green label'> Complete </span>
+                {% else %} 
+                    <span class = 'ui red label'> Not Complete </span>
+                {% endif %}
+
+                <a class="ui grey button" href = "/update/{{ todo.id }}">Update</a>
+                <a class="ui black button" href = "/delete/{{ todo.id }}">Delete</a>
+
+        </div>
+        {% endfor %}
+    </body>
+</html>
