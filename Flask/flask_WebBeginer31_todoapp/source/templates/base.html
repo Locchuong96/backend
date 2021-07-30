@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>ToDo Page</title>
+    </head>
+    <body>
+        <h1>ToDo App</h1>
+        <form action = "{{ url_for('create') }}" method = 'post'>
+            <label for='title'>ToDo Title</label>
+            <input type = 'text' name  = 'title' required = 'required' placeholder= "title">
+            <button type = 'submit'>Add task</button>
+        </form>
+        {% for todo in todo_list %}
+            <p> {{ todo.id }} | {{ todo.title }} | {{ todo.date }} </p>
+            
+            {% if todo.complete %}
+                <span> Not Complete </span>
+            {% else %} 
+                <span> Complete </span>
+            {% endif %}
+
+            <a href = "/update/{{ todo.id }}">Update</a>
+            <a href = "/delete/{{ todo.id }}">Delete</a>
+
+        {% endfor %}
+    </body>
+</html>
