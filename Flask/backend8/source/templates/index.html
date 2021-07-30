@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+        <title>Index Page</title>
+    </head>
+    <body>
+        <h3>Add new Api</h3>
+        <form action = "{{ url_for('api_add') }}" method = 'post'>
+            <table class="ui celled table">
+                <tr>
+                    <td>Type</td>
+                    <td>Url</td>
+                    <td>Params</td>
+                    <td>Example</td>
+                    <td>Comment</td>
+                    <td>Add it</td>
+                </tr>
+                <tr>
+                    <td><input type = 'text' name = 'type' placeholder = 'request type' required = 'required'></td>
+                    <td><input type = 'text' name = 'url' placeholder = 'api url' required = 'required' size = '40'></td>
+                    <td>
+                        <textarea name = 'params' rows ='17' cols = '20'>
+                            Add api's Params
+                        </textarea>
+                    </td>
+                    <td> <textarea name = 'example' rows ='17' cols = '20'>
+                        Add api's Example
+                    </textarea>
+                    </td>
+                    <td>
+                        <textarea name = 'comment' rows ='17' cols = '20'>
+                            Add api's Comment
+                        </textarea>
+                    </td>
+                    <td><button class="ui teal button" type = 'submit'>Submit</button></td>
+                </tr>
+            </table>
+        </form>
+        <h3>Api list</h3>
+        {% for api in api_list %} 
+        <div class = 'ui segment'>
+            <p class="ui teal header">{{api.date}} | {{api.type}} | {{api.url}}</p>
+            <textarea  rows ='17' cols = '40'>
+                {{ api.params }}
+            </textarea>
+            <textarea  rows ='17' cols = '40'>
+                {{ api.example }}
+            </textarea>
+            <textarea  rows ='17' cols = '40'>
+                {{ api.comment }}
+            </textarea>
+            <a class="ui red button" href = "/api_delete/{{ api.id }}">Delete</a>
+        </div>
+        {% endfor %}
+    </body>
+</html>
