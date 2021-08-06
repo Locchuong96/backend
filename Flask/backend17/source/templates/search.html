@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Search Page</title>
+    </head>
+    <body>
+        <label>Search by keyword</label>
+        <form action = "{{ url_for('search') }}" method = 'post'>
+            <input type = "text" name = 'keyword' placeholder = 'keyword' required = 'required'>
+            <button type = 'submit'>Submit</button>
+        </form>
+        <br>
+        <label>Search by area</label>
+        <form action = "{{ url_for('search') }}" method = 'post'>
+            <select name = 'area'>
+                <option value = "Q.1">Q.1</option>
+                <option value = "Q.2">Q.2</option>
+                <option value = "Q.3">Q.3</option>
+                <option value = "Q.4">Q.4</option>
+                <option value = "Q.5">Q.5</option>
+                <option value = "Q.6">Q.6</option>
+                <option value = "Q.7">Q.7</option>
+                <option value = "Q.8">Q.8</option>
+                <option value = "Q.9">Q.9</option>
+                <option value = "Q.10">Q.10</option>
+                <option value = "Q.11">Q.11</option>
+                <option value = "Q.12">Q.12</option>
+                <option value = "Q.GòVấp">Q.GòVấp</option>
+                <option value = "Q.BìnhThạnh">Q.BìnhThạnh</option>
+                <option value = "Q.BìnhTân">Q.BìnhTân</option>
+                <option value = "Q.TânBình">Q.TânBình</option>
+                <option value = "Q.TânPhú">Q.TânPhú</option>
+                <option value = "Q.PhúNhuận">Q.PhúNhuận</option>
+                <option value = "Q.ThủĐức">Q.ThủĐức</option>
+                <option value = "Q.TânPhú">Q.TânPhú</option>
+                <option value = "H.BìnhChánh">H.BìnhChánh</option>
+                <option value = "H.HócMôn">H.HócMôn</option>
+                <option value = "H.NhàBè">H.NhàBè</option>
+                <option value = "TP.ThủĐức">TP.ThủĐức</option>
+            </select>
+            <button type = 'submit'>Submit</button>
+        </form>
+        <br>
+        <label>Search by square meter</label>
+        <form action = "{{ url_for('search') }}" method = 'post'>
+            <input type = "number" step = "0.01" name = 'max_sqm' placeholder = 'max_sqm' required = 'required'>
+            <input type = "number" step = "0.01" name = 'min_sqm' placeholder = 'min_sqm' required = 'required'>
+            <button type = 'submit'>Submit</button>
+            </div>
+        </form>
+        <br>
+        <label>Search by price</label>
+        <form action = "{{ url_for('search') }}" method = 'post'>
+            <input type = "number" step = "0.01" name = 'max_price' placeholder = 'max_price' required = 'required'>
+            <input type = "number" step = "0.01" name = 'min_price' placeholder = 'min_price' required = 'required'>
+            <button type = 'submit'>Submit</button>
+            </div>
+        </form>
+    </body>
+</html>

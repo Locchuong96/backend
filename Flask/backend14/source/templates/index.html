@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+        <title>Index Page</title>
+    </head>
+    <body>
+        <h3>Add new Api</h3>
+        <form action = "{{ url_for('api_add') }}" method = 'post'>
+            <table class="ui celled table">
+                <tr>
+                    <td>Author</td>
+                    <td>Type</td>
+                    <td>Url</td>
+                    <td>Params</td>
+                    <td>Example</td>
+                    <td>Comment</td>
+                    <td>Add it</td>
+                </tr>
+                <tr>
+                    <td><input type = 'text' name = 'author' placeholder = 'author' required = 'required' size = '10'></td>
+                    <td><input type = 'text' name = 'type' placeholder = 'request type' required = 'required' size = '10'></td>
+                    <td><input type = 'text' name = 'url' placeholder = 'api url' required = 'required' size = '30'></td>
+                    <td>
+                        <textarea class = "ui message" name = "params" rows ='10' cols = '10' style="text-align:left; overflow:auto;">None</textarea>
+                    </td>
+                    <td> 
+                        <textarea class = "ui message" name = "example" rows ='10' cols = '10' style="text-align:left; overflow:auto;">None</textarea>
+                    </td>
+                    <td>
+                        <textarea class = "ui message" name = "comment" rows ='10' cols = '10' style="text-align:left; overflow:auto;">None</textarea>
+                    </td>
+                    <td><button class="ui teal button" type = 'submit'>Submit</button></td>
+                </tr>
+            </table>
+        </form>
+        <h3>Api list</h3>
+        {% for i in range(count) %} 
+            <div class = 'ui segment'>
+                <div class = 'ui labels'>
+                    <a class = 'ui teal label'>
+                        {{ i + 1}}
+                    </a>
+                    <a class = 'ui orange label'>
+                        {{ api_list[i].author}}
+                    </a>
+                    <a class = 'ui green label'>
+                        {{ api_list[i].date}}
+                    </a>
+                    <a class = 'ui blue label'>
+                        {{ api_list[i].type}}
+                    </a>
+                    <a class = 'ui black label'>
+                        {{ api_list[i].url}}
+                    </a>
+                    <a class="ui red button" href = "/api_delete/{{ api_list[i].id }}">
+                        Delete
+                    </a>
+                </div>
+                <div class="ui form" >
+                    <div class = "inline fields">
+                        <textarea  class = "ui message" rows ='7' cols = '15' style="text-align:left; overflow:auto;">{{ api_list[i].params }}</textarea>
+                        <textarea  class = "ui message" rows ='7' cols = '15' style="text-align:left; overflow:auto;">{{ api_list[i].example }}</textarea>
+                        <textarea  class = "ui message" rows ='7' cols = '15' style="text-align:left; overflow:auto;">{{ api_list[i].comment }}</textarea>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </body>
+</html>
