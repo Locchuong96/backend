@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+<!-- Title page here -->
+{% block title1 %}
+Search Page 
+{% endblock %}
+
+<!-- Custom page here -->
+{% block content1 %}
+<table class = 'table table-honver table-dark'>
+    <thread>
+        <!--Draw the columns here-->
+        <th scope = 'col'>ID</th>
+        <th scope = 'col'>NAME</th>
+        <th scope = 'col'>BARCODE</th>
+        <th scope = 'col'>PRICE</th>
+        <th scope = 'col'>Option</th>
+    </thread>
+    <tbody>
+        <!--Jinja to display by for loop-->
+        {% for item in items %} 
+        <tr>
+            <td>{{ item.id }}</td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.barcode }}</td>
+            <td>{{ item.price }} $</td>
+            <td> 
+                <button class= "btn btn-outline btn-info">More Info</button>
+                <button class= "btn btn-outline btn-success">Purchase It!</button>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
