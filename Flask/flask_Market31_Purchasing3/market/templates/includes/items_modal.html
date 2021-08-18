@@ -1,0 +1,58 @@
+<style>
+    .modal-content{
+        background-color:#212121
+    }
+</style>
+
+<!-- Modal Info -->
+<div class="modal fade" id="Modal-MoreInfo-{{ item.id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">{{ item.name }}</h5>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+              <span aira-hidden = "true">x</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          {{ item.descript }}
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- Modal Purchase -->
+<div class="modal fade" id="Modal-Purchase-{{ item.id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalLabel">{{ item.name }}</h5>
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aira-hidden = "true">x</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method = "post">
+          {{ purchase_form.hidden_tag() }}
+          <h4 class = "text-center">
+            Purchase {{item.name}} for {{item.price}} $ ?
+          </h4>
+          <br>
+          <h6 class = "text-center">
+            By clicking Purchase, you will purchase this item
+          </h6>
+          <br>
+          <!--edit the cottent in the purchase_form with key = submit before submit -->
+          <input id="purchase_item" name="purchase_item" type="hidden" value="{{ item.name }}">  
+          {{ purchase_form.submit(class = "btn btn-outline-success btn-block") }}
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
