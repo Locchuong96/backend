@@ -6,10 +6,8 @@ db = client['db1']
 
 coll = db['table']
 
-query = {'name':{'$regex':'^S'}}
+# coll.drop() # drop collection
 
-#docs = coll.delete_one(query) # delete one row
-docs = coll.delete_many(query) # deleting specific single record
+# client.drop_database('db1') # drop the database
 
-for record in coll.find():
-	print(record)
+print(client.list_database_names())

@@ -6,10 +6,7 @@ db = client['db1']
 
 coll = db['table']
 
-query = {'name':{'$regex':'^S'}}
+docs = coll.find().sort('address',-1)
 
-#docs = coll.delete_one(query) # delete one row
-docs = coll.delete_many(query) # deleting specific single record
-
-for record in coll.find():
-	print(record)
+for doc in docs:
+	print(doc)
