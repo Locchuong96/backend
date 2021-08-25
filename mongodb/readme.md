@@ -31,7 +31,12 @@ pip3 install Flask-Pymongo
 
 # Install Mongo Client, Mongo Compass
 
-mongo client : sudo apt install mongo-clients | mongo 
+mongo client : sudo apt install mongo-clients 
+  | mongo 
+  | show databases 
+  | use pythonmongodb
+  | show collections
+  | db.users.find()
 
 mongo compass: mongodb-compass
 
