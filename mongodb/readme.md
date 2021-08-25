@@ -27,3 +27,7 @@ pip3 install flask-mongoengine
 
 pip3 install Flask-Pymongo
 
+# Install Mongo Client, Mongo Compass
+mongo client : sudo apt install mongo-clients
+mongo compass: mongodb-compass
+
