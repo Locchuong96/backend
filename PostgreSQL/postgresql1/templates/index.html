@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset = utf-8>
+        <link rel="stylesheet" type="text/css" href="/static/style.css">
+        <title>Test</title>
+    </head>
+    <body >
+        <img src = 'static/header.png' alt = 'header' width = '50%'>
+        <br>
+        <img src = 'static/hogwarts_logo.jpg' alt = 'header' width = '12%'>
+        <br>
+        <br>
+        <form action = '/submit' method = 'post'>
+            <label for = 'fname'>First Name:</label><br>
+            <input type = 'text' id = 'fname' name = 'fname' required>
+            <br><br>
+            <label for = 'lname'>Last Name:</label>
+            <br>
+            <input type = 'text' id = 'lname' name = 'lname' required>
+            <br><br>
+            <label for = 'pets'>Choose your pet:</label>
+            <select name = 'pets' id ='pets'>
+                <option value = 'owl'>Owl</option>
+                <option value = 'cat'>Cat</option>
+                <option value = 'rat'>Rat</option>
+                <option value = 'toad'>Toad</option>
+            </select>
+            <br><br>
+            <label> Are you staying at HogWarts during Christmas? </label>
+            <br><br>
+                <input type = "radio" id = 'yes' name ='option' value = 'yes'>
+                <label for 'yes'>Yes</label>
+                <input type = "radio" id = 'yes' name ='option' value = 'yes'>
+                <label for 'yes'>No</label>
+            <br><br>
+            <button type = 'submit'><a>Submit</a></button>
+        </form>
+    </body>
+</html>
