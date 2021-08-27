@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Update Page
+{% endblock %}
+
+{% block content %}
+    <form action = "/update/{{student.id}}" method = 'post'>
+        <lable>First name</lable>
+        <input type = 'text' id = 'fname' name = 'fname' placeholder = 'First Name'>
+        <br>
+        <lable>Last name</lable>
+        <input type = 'text' id = 'lname' name = 'lname' placeholder = 'Last Name'>
+        <br>
+        <lable>Age</lable>
+        <input type = 'number' id = 'age' name = 'age' placeholder = 'Age'>
+        <br>
+        <lable>GPA</lable>
+        <input type = 'number' step = "0.01" id = 'gpa' name = 'gpa' placeholder = 'GPA'>
+        <br>
+        <button type = 'submit'>Submit</button>
+    </form>
+{% endblock %}

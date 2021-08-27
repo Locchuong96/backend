@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Home Page
+{% endblock %}
+
+{% block content %}
+    <form action = "{{ url_for('add_student') }}" method = 'post'>
+        <lable>First name</lable>
+        <input type = 'text' id = 'fname' name = 'fname' placeholder = 'First Name' required >
+        <br>
+        <lable>Last name</lable>
+        <input type = 'text' id = 'lname' name = 'lname' placeholder = 'Last Name' required >
+        <br>
+        <lable>Age</lable>
+        <input type = 'number' id = 'age' name = 'age' placeholder = 'Age' required >
+        <br>
+        <lable>GPA</lable>
+        <input type = 'number' step = "0.01" id = 'gpa' name = 'gpa' placeholder = 'GPA'>
+        <br>
+        <button type = 'submit'>Submit</button>
+    </form>
+{% endblock %}

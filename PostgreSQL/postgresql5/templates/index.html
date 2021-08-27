@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Home page
+{% endblock %}
+
+<!--
+    table: table tag
+    tr   : table row 
+    td   : table define 
+    student[0]
+
+-->
+
+{% block content %}
+<table>
+    <tr>
+        <th> Id </th>
+        <th> First Name </th>
+        <th> Last Name </th>
+        <th> Age </th>
+        <th> GPA </th>
+        <th> Update </th>
+        <th> Delete </th>
+    </tr>
+    {% for student in students %}
+        <tr>
+            <td> {{ student.id }} </td>
+            <td> {{ student.fname }} </td>
+            <td> {{ student.lname }} </td>
+            <td> {{ student.age }} </td>
+            <td> {{ student.gpa }} </td>
+            <td> <a href = "/edit/{{student.id}}">Edit</a></td>
+            <td> <a href = "/delete/{{student.id}}">Delete</a></td>
+        </tr>
+    {% endfor %}
+</table>
+{% endblock%}
