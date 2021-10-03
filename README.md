@@ -12,7 +12,7 @@ https://github.com/flasgger/flasgger#top-contributors
 
 ## FastAPI
 ### http://127.0.0.1:8000/docs
-![Capture1](https://user-images.githubusercontent.com/73679364/135738198-1e27d367-2452-4f9e-bba1-9cb5c6caaab7.PNG)
+![Capture](https://user-images.githubusercontent.com/73679364/135738215-74839dbf-78b9-4ed8-a98f-e7ff67f61df6.PNG)
 
 ## Jinja JSON frontend
 https://www.youtube.com/watch?v=9v6kDoUjIs4
