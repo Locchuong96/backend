@@ -22,3 +22,5 @@ https://www.youtube.com/watch?v=tLKKmouUams
 
 ## Jinja JSON frontend
 https://www.youtube.com/watch?v=9v6kDoUjIs4
+
+https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_and_retrieving_form_data
