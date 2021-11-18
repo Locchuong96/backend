@@ -24,3 +24,7 @@ https://www.youtube.com/watch?v=tLKKmouUams
 https://www.youtube.com/watch?v=9v6kDoUjIs4
 
 https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_and_retrieving_form_data
+
+## Requests
+
+https://www.w3schools.com/python/ref_requests_post.asp
