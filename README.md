@@ -42,3 +42,5 @@ https://www.w3schools.com/python/ref_requests_response.asp
 https://www.youtube.com/watch?v=Kcka5WBMktw
 
 https://www.youtube.com/watch?v=hAEJajltHxc&list=PLsM05n4rlXWTamBIPSom7mQVA-xooDkxw&index=41
+
+https://github.com/derlin/get-html.git
