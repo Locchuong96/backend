@@ -43,6 +43,3 @@ https://www.youtube.com/watch?v=Kcka5WBMktw
 
 https://www.youtube.com/watch?v=hAEJajltHxc&list=PLsM05n4rlXWTamBIPSom7mQVA-xooDkxw&index=41
 
-## Render html files
-
-https://github.com/derlin/get-html.git
