@@ -37,6 +37,8 @@ https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_and_retrieving_form
 
 https://www.w3schools.com/python/ref_requests_post.asp
 
+https://www.w3schools.com/python/ref_requests_response.asp
+
 https://www.youtube.com/watch?v=Kcka5WBMktw
 
 https://www.youtube.com/watch?v=hAEJajltHxc&list=PLsM05n4rlXWTamBIPSom7mQVA-xooDkxw&index=41
