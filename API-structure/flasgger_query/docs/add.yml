@@ -1,0 +1,14 @@
+add 2 integer numbers function
+---
+parameters:
+  - name: num1
+    in: query
+    type: integer
+  - name: num2
+    in: query
+    type: integer
+responses:
+  202:
+    description: "query success!"
+  401:
+    description: "query invalid"

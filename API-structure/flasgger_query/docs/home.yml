@@ -1,0 +1,7 @@
+home page (a simple api for testing swagger)
+---
+responses:
+  200:
+    description: "access successful"
+  400:
+    description: "Something wrong happen"
