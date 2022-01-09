@@ -34,6 +34,8 @@ https://www.youtube.com/watch?v=tLKKmouUams
 ## Marshmallow
 
 https://marshmallow.readthedocs.io/en/stable/quickstart.html
+https://marshmallow.readthedocs.io/en/stable/api_reference.html#module-marshmallow.fields
+https://marshmallow.readthedocs.io/en/stable/api_reference.html#api-validators
 
 ## Jinja JSON frontend
 
