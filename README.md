@@ -31,6 +31,10 @@ https://www.youtube.com/watch?v=tLKKmouUams
 
 ![Capture](https://user-images.githubusercontent.com/73679364/135738215-74839dbf-78b9-4ed8-a98f-e7ff67f61df6.PNG)
 
+## Marshmallow
+
+https://marshmallow.readthedocs.io/en/stable/quickstart.html
+
 ## Jinja JSON frontend
 
 https://www.youtube.com/watch?v=9v6kDoUjIs4
