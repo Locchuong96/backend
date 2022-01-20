@@ -1,5 +1,8 @@
 # Backend
-Flask,Django,etc.
+Framework(flask,django...),SQL,noSQL,etc.
+
+## JOIN
+![join-sql](https://user-images.githubusercontent.com/73679364/150269896-5b6a3dbb-98d7-49e4-b612-53489e64ebeb.png)
 
 ## Flask
 
