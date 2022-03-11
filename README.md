@@ -1,7 +1,12 @@
 # Backend
 Framework(flask,django...),SQL,noSQL,etc.
 
+## Responde Code
+
+https://viblo.asia/p/ban-da-thuc-su-biet-http-response-status-code-gGJ59NOrKX2
+
 ## JOIN
+
 ![join-sql](https://user-images.githubusercontent.com/73679364/150269896-5b6a3dbb-98d7-49e4-b612-53489e64ebeb.png)
 
 ## Flask
