@@ -33,7 +33,7 @@ Framework(flask,django...),SQL,noSQL,etc.
 
 open local fastAPI gui
 
-  http://127.0.0.1:8000/docs
+    http://127.0.0.1:8000/docs
   
 ![Capture](https://user-images.githubusercontent.com/73679364/135738215-74839dbf-78b9-4ed8-a98f-e7ff67f61df6.PNG)
 
@@ -41,7 +41,7 @@ open local fastAPI gui
 
 open local swagger api gui
   
-  http://127.0.0.1:5000/apidocs
+    http://127.0.0.1:5000/apidocs
 
 ![Capture1](https://user-images.githubusercontent.com/73679364/135738167-ecd88f1a-ceb3-47e4-a313-414e44040c4e.PNG)
 
