@@ -19,7 +19,7 @@ Framework(flask,django...),SQL,noSQL,etc.
 
 **2/ Flask framework**
 
-[flask-course(]https://www.youtube.com/watch?v=BUmUV8YOzgM&list=PLF2JzgCW6-YY_TZCmBrbOpgx5pSNBD0_L)
+[flask-course](https://www.youtube.com/watch?v=BUmUV8YOzgM&list=PLF2JzgCW6-YY_TZCmBrbOpgx5pSNBD0_L)
 
 **3/ API**
 
