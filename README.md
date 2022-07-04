@@ -13,15 +13,15 @@ Framework(flask,django...),SQL,noSQL,etc.
 
 [How to Process Incoming Request Data in Flask](https://www.youtube.com/watch?v=hAEJajltHxc&list=PLsM05n4rlXWTamBIPSom7mQVA-xooDkxw&index=41)
 
-**2/ SQL**
+**2/ SQL & No-SQL**
 
 [join-sql](https://user-images.githubusercontent.com/73679364/150269896-5b6a3dbb-98d7-49e4-b612-53489e64ebeb.png)
 
-**2/ Flask framework**
+**3/ Flask framework**
 
 [flask-course](https://www.youtube.com/watch?v=BUmUV8YOzgM&list=PLF2JzgCW6-YY_TZCmBrbOpgx5pSNBD0_L)
 
-**3/ API**
+**4/ API**
 
 [OpenAPI document](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/2.0.md#parameterObject)
 
