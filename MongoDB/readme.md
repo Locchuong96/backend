@@ -25,12 +25,12 @@ Pymongo, Flask Pymongo, Flask MongoEnigne ,Mongo client all come to MongoDB serv
 
 **Install Mongo Client, Mongo Compass**
 
-mongo client : sudo apt install mongo-clients 
-  | mongo 
-  | show databases 
-  | use pythonmongodb
-  | show collections
-  | db.users.find()
+    mongo client : sudo apt install mongo-clients 
+      | mongo 
+      | show databases 
+      | use pythonmongodb
+      | show collections
+      | db.users.find()
 
-mongo compass: mongodb-compass
+`mongo compass: mongodb-compass`
 
