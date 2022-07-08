@@ -21,6 +21,8 @@ Framework(flask,django...),SQL,noSQL,etc.
 
 [flask-course](https://www.youtube.com/watch?v=BUmUV8YOzgM&list=PLF2JzgCW6-YY_TZCmBrbOpgx5pSNBD0_L)
 
+[full_stack_python](https://www.fullstackpython.com/table-of-contents.html)
+
 **4/ API**
 
 [Python API Development - Comprehensive Course for Beginners](https://www.youtube.com/watch?v=0sOvCWFmrtA)
