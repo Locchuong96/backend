@@ -17,6 +17,10 @@ Framework(flask,django...),SQL,noSQL,etc.
 
 [join-sql](https://user-images.githubusercontent.com/73679364/150269896-5b6a3dbb-98d7-49e4-b612-53489e64ebeb.png)
 
+[mongoDB_official_document](https://www.mongodb.com/docs/manual/applications/data-models-tree-structures/)
+
+[pymongo](https://www.geeksforgeeks.org/mongodb-and-python/)
+
 **3/ Flask framework**
 
 [flask-course](https://www.youtube.com/watch?v=BUmUV8YOzgM&list=PLF2JzgCW6-YY_TZCmBrbOpgx5pSNBD0_L)
