@@ -66,3 +66,7 @@ open local swagger api gui
 [Using Python and Jinja2 to Create an HTML Webpage from JSON Data](https://www.youtube.com/watch?v=9v6kDoUjIs4)
 
 [Sending_and_retrieving_form_data](https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_and_retrieving_form_data)
+
+**references**
+
+[web-doc](https://developer.mozilla.org/en-US/)
