@@ -21,7 +21,7 @@ Framework(flask,django...),SQL,noSQL,etc.
 
 [pymongo](https://www.geeksforgeeks.org/mongodb-and-python/)
 
-**3/ Flask framework**
+**3/ flask framework**
 
 [flask-course](https://www.youtube.com/watch?v=BUmUV8YOzgM&list=PLF2JzgCW6-YY_TZCmBrbOpgx5pSNBD0_L)
 
@@ -66,6 +66,18 @@ open local swagger api gui
 [Using Python and Jinja2 to Create an HTML Webpage from JSON Data](https://www.youtube.com/watch?v=9v6kDoUjIs4)
 
 [Sending_and_retrieving_form_data](https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_and_retrieving_form_data)
+
+**7/ essential tutorials**
+
+[Learn PostgreSQL Tutorial - Full Course for Beginners](https://www.youtube.com/watch?v=qw--VYLpxG4)
+
+[SQL Tutorial - Full Database Course for Beginners](https://www.youtube.com/watch?v=HXV3zeQKqGY)
+
+[Postman Beginner's Course - API Testing](https://www.youtube.com/watch?v=VywxIQ2ZXw4)
+
+[UI / UX Design Tutorial – Wireframe, Mockup & Design in Figma](https://www.youtube.com/watch?v=c9Wg6Cb_YlU)
+
+[Git for Professionals Tutorial - Tools & Concepts for Mastering Version Control with Git](https://www.youtube.com/watch?v=Uszj_k0DGsg)
 
 **references**
 
