@@ -27,6 +27,8 @@ Framework(flask,django...),SQL,noSQL,etc.
 
 [full_stack_python](https://www.fullstackpython.com/table-of-contents.html)
 
+[Python Real-Time Web Application Crash Course | Learn to create a Sports Website ⚽🏅🏀](https://www.youtube.com/watch?v=-CT28e2Dl24)
+
 **4/ API**
 
 [Python API Development - Comprehensive Course for Beginners](https://www.youtube.com/watch?v=0sOvCWFmrtA)
