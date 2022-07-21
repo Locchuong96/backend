@@ -31,6 +31,8 @@ Framework(flask,django...),SQL,noSQL,etc.
 
 **4/ API**
 
+[httpbin](https://httpbin.org/#/)
+
 [Python API Development - Comprehensive Course for Beginners](https://www.youtube.com/watch?v=0sOvCWFmrtA)
 
 [OpenAPI document](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/2.0.md#parameterObject)
