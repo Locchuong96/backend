@@ -14,55 +14,55 @@
 
 6/[Setup PSQL (MAC OS)](/PostgreSQL/postgresql7)
 
-7/[Setup PSQL (Windows)](/PostgreSQL/postgresql8)
+7/[Setup PSQL (Windows)](/PostgreSQL/postgresql7)
 
-8/[How to Create Database](/PostgreSQL/postgresq9)
+8/[How to Create Database](/PostgreSQL/postgresq8)
 
-9/[How to Connect to Databases](/PostgreSQL/postgresql10)
+9/[How to Connect to Databases](/PostgreSQL/postgresql9)
 
-10/[A Very Dangerous Command](/PostgreSQL/postgresql11)
+10/[A Very Dangerous Command](/PostgreSQL/postgresql10)
 
-11/[How To Create Tables](/PostgreSQL/postgresql12)
+11/[How To Create Tables](/PostgreSQL/postgresql11)
 
-12/[Creating Tables Without Constraints](/PostgreSQL/postgresql13)
+12/[Creating Tables Without Constraints](/PostgreSQL/postgresql12)
 
-13/[Creating Tables with Constraints](/PostgreSQL/postgresql14)
+13/[Creating Tables with Constraints](/PostgreSQL/postgresql13)
 
-14/[Insert Into](/PostgreSQL/postgresql15)
+14/[Insert Into](/PostgreSQL/postgresql14)
 
-15/[Insert Into Example](/PostgreSQL/postgresql16)
+15/[Insert Into Example](/PostgreSQL/postgresql15)
 
-16/[Generate 1000 Rows with Mockaroo](/PostgreSQL/postgresql17)
+16/[Generate 1000 Rows with Mockaroo](/PostgreSQL/postgresql16)
 
-17/[Select From](/PostgreSQL/postgresql18)
+17/[Select From](/PostgreSQL/postgresql17)
 
-18/[Order By](/PostgreSQL/postgresql19)
+18/[Order By](/PostgreSQL/postgresql18)
 
-19/[Distinct](/PostgreSQL/postgresql20)
+19/[Distinct](/PostgreSQL/postgresql19)
 
-20/[Where Clause and AND](/PostgreSQL/postgresql21)
+20/[Where Clause and AND](/PostgreSQL/postgresql20)
 
-21/[Comparison Operators](/PostgreSQL/postgresql22)
+21/[Comparison Operators](/PostgreSQL/postgresql21)
 
-22/[Limit, Offset & Fetch](/PostgreSQL/postgresql23)
+22/[Limit, Offset & Fetch](/PostgreSQL/postgresql22)
 
-23/[IN](/PostgreSQL/postgresql24)
+23/[IN](/PostgreSQL/postgresql23)
 
-24/[Between](/PostgreSQL/postgresql25)
+24/[Between](/PostgreSQL/postgresql24)
 
-25/[Like And iLike](/PostgreSQL/postgresql26)
+25/[Like And iLike](/PostgreSQL/postgresql25)
 
-26/[Group By](/PostgreSQL/postgresql27)
+26/[Group By](/PostgreSQL/postgresql26)
 
-27/[Group By Having](/PostgreSQL/postgresql28)
+27/[Group By Having](/PostgreSQL/postgresql27)
 
-28/[Adding New Table And Data Using Mockaroo](/PostgreSQL/postgresql29)
+28/[Adding New Table And Data Using Mockaroo](/PostgreSQL/postgresql28)
 
-29/[Calculating Min, Max & Average](/PostgreSQL/postgresql30)
+29/[Calculating Min, Max & Average](/PostgreSQL/postgresql29)
 
-30/[Sum](/PostgreSQL/postgresql31)
+30/[Sum](/PostgreSQL/postgresql30)
 
-31/[Basics of Arithmetic Operators](/PostgreSQL/postgresql32)
+31/[Basics of Arithmetic Operators](/PostgreSQL/postgresql31)
 
 32/[Arithmetic Operators (ROUND)]()
 
