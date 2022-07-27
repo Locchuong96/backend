@@ -204,6 +204,8 @@ pass: pass123 -port 5432
 
 [Learn PostgreSQL Tutorial - Full Course for Beginners](https://www.youtube.com/watch?v=qw--VYLpxG4)
 
+[official-document](https://www.postgresql.org/docs/)
+
 #### postgreSQL-python
 
 - install postgres in python: `pip install psycopg2`
