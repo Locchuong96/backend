@@ -49,6 +49,7 @@
 - check database `\l`
 - Close `Ctrl` + `Z`
 - Exit `exit`
+- Change the password `ALTER USER postgres WITH PASSWORD 'pass123'`
 
 **How data stored**
 - Stores in the table
