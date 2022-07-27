@@ -45,6 +45,9 @@
 |24|Anne|Smith|44|
 |313|Jake|Jones|21|
 
+**superuser postgresql**
+pass: pass123 -port 5432
+
 #### References
 
 [Learn PostgreSQL Tutorial - Full Course for Beginners](https://www.youtube.com/watch?v=qw--VYLpxG4)
