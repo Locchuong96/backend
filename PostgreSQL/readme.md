@@ -2,7 +2,7 @@
 
 ⭐️ Contents ⭐️
 What is a Database
-1/[What is SQL And Relational Database](/postgresql5)
+1/[What is SQL And Relational Database]()
 
 2/[What is PostreSQL AKA Postrgres]()
 
@@ -10,7 +10,7 @@ What is a Database
 
 4/[PostgreSQL Installation (Windows)]()
 
-5/[GUI Clients vs Terminal/CMD Clients]()
+5/[GUI Clients vs Terminal/CMD Clients](/postgresql5)
 
 6/[Setup PSQL (MAC OS)]()
 
