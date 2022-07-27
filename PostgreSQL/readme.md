@@ -46,6 +46,10 @@
       sudo su postgres
       psql
 
+- check database `\l`
+- Close `Ctrl` + `Z`
+- Exit `exit`
+
 **How data stored**
 - Stores in the table
 - Form by 2 thing column-row
