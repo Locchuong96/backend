@@ -24,15 +24,15 @@
 
 -install postgreSQL on linux
 
-  sudo apt-get update
-  sudo apt-get install postgresql
-  sudo apt-get install postgresql postgresql-contrib
-  ls /etc/postgresql/10/main
+    sudo apt-get update
+    sudo apt-get install postgresql
+    sudo apt-get install postgresql postgresql-contrib
+    ls /etc/postgresql/10/main
   
 - inside postgresql installation
 
-  conf.d       pg_ctl.conf  pg_ident.conf    start.conf
-  environment  pg_hba.conf  postgresql.conf
+      conf.d       pg_ctl.conf  pg_ident.conf    start.conf
+      environment  pg_hba.conf  postgresql.conf
 
 - check postgresql `service postgresql`
   
@@ -42,9 +42,9 @@
 
 - go to postgresql command line tool `psql`
 
-  service postgresql start
-  sudo su postgres
-  psql
+      service postgresql start
+      sudo su postgres
+      psql
 
 **How data stored**
 - Stores in the table
