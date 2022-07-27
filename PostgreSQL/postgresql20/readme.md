@@ -1,5 +1,15 @@
-**Distinct**
+**Where Clause and AND**
 
-- sort a column other by itself will give you the repeated values ex `SELECT	country_of_birth FROM person ORDER BY country_of_birth;`
+- We use where clause to select row follow a conditions 
 
-- get unqiue value by `DISTINCT`: `SELECT DISTINCT country_of_birth FROM person ORDER BY country_of_birth;`
+`SELECT * FROM person WHERE gender = 'Female';`
+
+`SELECT * FROM person WHERR gender = 'Male';`
+
+- We can also add multi condition with `AND` or `OR`
+
+`SELECT * FROM person WHERE gender = 'Male' AND country_of_birth = 'Poland'`
+
+`SELECT * FROM person WHERE country_of_birth = 'China' OR country_of_birth = 'Poland'`
+
+`SELECT * FROM person WHERE gender = 'Male' AND (country_of_birth = 'Poland' OR country_of_birth ='China') AND last_name = 'Pietersma'`
