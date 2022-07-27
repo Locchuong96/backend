@@ -12,6 +12,15 @@
 - Easy to learn
 - Very powerful
 
+**postgres's advantages**
+- Object-relational database management system
+- Modern
+- Open Source
+- Other database engines: `ORACLE-Database`,`MySQL`,`Microsoft SQL Server`,etc.
+
+**install postgresSQL**
+[postgresql-installation](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
+
 **How data stored**
 - Stores in the table
 - Form by 2 thing column-row
