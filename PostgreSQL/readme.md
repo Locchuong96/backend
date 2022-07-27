@@ -19,7 +19,32 @@
 - Other database engines: `ORACLE-Database`,`MySQL`,`Microsoft SQL Server`,etc.
 
 **install postgresSQL**
+
 [postgresql-installation](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
+
+-install postgreSQL on linux
+
+  sudo apt-get update
+  sudo apt-get install postgresql
+  sudo apt-get install postgresql postgresql-contrib
+  ls /etc/postgresql/10/main
+  
+- inside postgresql installation
+
+  conf.d       pg_ctl.conf  pg_ident.conf    start.conf
+  environment  pg_hba.conf  postgresql.conf
+
+- check postgresql `service postgresql`
+  
+  Usage: /etc/init.d/postgresql {start|stop|restart|reload|force-reload|status} [version ..]
+
+- `postgres` create a user account on your os-system, to switch to this account `sudo su postgres`
+
+- go to postgresql command line tool `psql`
+
+  service postgresql start
+  sudo su postgres
+  psql
 
 **How data stored**
 - Stores in the table
