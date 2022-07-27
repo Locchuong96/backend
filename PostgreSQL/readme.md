@@ -1,9 +1,9 @@
 ### postgreSQL
 
 **What is database**
-- Store
-- Manipulate
-- Retrieve
+- Store data
+- Manipulate data
+- Retrieve data
 
 #### References
 
