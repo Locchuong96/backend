@@ -30,7 +30,7 @@
 
 14/[Insert Into](/PostgreSQL/postgresql14)
 
-15/[Insert Into Example](/PostgreSQL/postgresql15)
+15/[Insert Into Example](/PostgreSQL/postgresql16)
 
 16/[Generate 1000 Rows with Mockaroo](/PostgreSQL/postgresql16)
 
