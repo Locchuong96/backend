@@ -17,3 +17,7 @@
 - list all users `\du`
 
 - create database `CREATE DATABASE [database_name];` ex `CREATE DATABASE test;`
+
+- create database: `CREATE DATABASE test`
+
+- delete database: `DROP DATABASE test`
