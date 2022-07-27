@@ -2,7 +2,7 @@
 
 ⭐️ Contents ⭐️
 What is a Database
-1/[What is SQL And Relational Database]()
+1/[What is SQL And Relational Database](/postgresql5)
 
 2/[What is PostreSQL AKA Postrgres]()
 
