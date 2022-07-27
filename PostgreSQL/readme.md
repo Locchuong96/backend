@@ -23,6 +23,19 @@
 |3|Andrew|Jacob|male|19|
 |4|Julia|Bravo|female|34|
 
+**Relational database**
+|id|first_name|last_name|gender|age|car_id|
+|---|---|---|---|---|---|
+|1|Anne|Smith|female|44||
+|2|Jake|Jones|male|21|24|
+|3|Andrew|Jacob|male|19||
+|4|Julia|Bravo|female|34|313|
+
+|id|make|model|price|
+|---|---|---|---|
+|24|Anne|Smith|44|
+|313|Jake|Jones|21|
+
 #### References
 
 [Learn PostgreSQL Tutorial - Full Course for Beginners](https://www.youtube.com/watch?v=qw--VYLpxG4)
