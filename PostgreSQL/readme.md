@@ -10,7 +10,7 @@ What is a Database
 
 4/[PostgreSQL Installation (Windows)]()
 
-5/[GUI Clients vs Terminal/CMD Clients](/postgresql5)
+5/[GUI Clients vs Terminal/CMD Clients](/PostgreSQL/postgresql5)
 
 6/[Setup PSQL (MAC OS)]()
 
