@@ -64,43 +64,43 @@
 
 31/[Basics of Arithmetic Operators](/PostgreSQL/postgresql31)
 
-32/[Arithmetic Operators (ROUND)]()
+32/[Arithmetic Operators (ROUND)](/PostgreSQL/postgresql32)
 
-33/[Alias]()
+33/[Alias](/PostgreSQL/postgresql33)
 
-34/[Coalesce]()
+34/[Coalesce](/PostgreSQL/postgresql34)
 
-35/[NULLIF]()
+35/[NULLIF](/PostgreSQL/postgresql35)
 
-36/[Timestamps And Dates Course]()
+36/[Timestamps And Dates Course](/PostgreSQL/postgresql36)
 
-37/[Adding And Subtracting With Dates]()
+37/[Adding And Subtracting With Dates](/PostgreSQL/postgresql37)
 
-38/[Extracting Fields From Timestamp]()
+38/[Extracting Fields From Timestamp](/PostgreSQL/postgresql38)
 
-39/[Age Function]()
+39/[Age Function](/PostgreSQL/postgresql39)
 
-40/[What Are Primary Keys]()
+40/[What Are Primary Keys](/PostgreSQL/postgresql40)
 
-41/[Understanding Primary Keys]()
+41/[Understanding Primary Keys](/PostgreSQL/postgresql41)
 
-42/[Adding Primary Key]()
+42/[Adding Primary Key](/PostgreSQL/postgresql42)
 
-43/[Unique Constraints]()
+43/[Unique Constraints](/PostgreSQL/postgresql43)
 
-44/[Check Constraints]()
+44/[Check Constraints](/PostgreSQL/postgresql44)
 
-45/[How to Delete Records]()
+45/[How to Delete Records](/PostgreSQL/postgresql45)
 
-46/[How to Update Records]()
+46/[How to Update Records](/PostgreSQL/postgresql46)
 
-47/[On Conflict Do Nothing]()
+47/[On Conflict Do Nothing](/PostgreSQL/postgresql47)
 
-48/[Upsert]()
+48/[Upsert](/PostgreSQL/postgresql48)
 
-49/[What Is A Relationship/Foreign Keys]()
+49/[What Is A Relationship/Foreign Keys](/PostgreSQL/postgresql49)
 
-50/[Adding Relationship Between Tables]()
+50/[Adding Relationship Between Tables](/PostgreSQL/postgresql50)
 
 51/[Updating Foreign Keys Columns]()
 
