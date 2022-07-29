@@ -7,3 +7,5 @@
 - select follow `%`: `SELECT * FROM person WHERE email LIKE '%google.%';`
 
 - select follow number of charater`_`: `SELECT * FROM person WHERE email LIKE '%_____@%';`
+
+- ilike ignore lower and upper case `SELECT * FROM person WHERE gender ILIKE 'female'`
