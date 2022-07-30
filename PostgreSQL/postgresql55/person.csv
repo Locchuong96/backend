@@ -1,0 +1,5 @@
+id,first_name,last_name,gender,email,date_of_birth,country_of_birth,car_id,id,make,model,price
+2,Jake,Jones,Male,jake@email.com,1892-12-22,USA,1,1,BWM,Red,12400.65
+4,Julia,Bravo,Female,,1850-07-11,USA,3,3,Kia,Blue,3310.43
+3,Andrew,Jacob,Male,andrew1@email.com,1995-05-06,USA,4,4,Honda,Yellow,5400.85
+1,Anne,Smith,Female,,1990-02-03,USA,,,,,
