@@ -3,6 +3,8 @@ Framework(flask,django...),SQL,noSQL,etc.
 
 **1/ request and response**
 
+[Query_string](https://en.wikipedia.org/wiki/Query_string)
+
 [viblo-response](https://viblo.asia/p/ban-da-thuc-su-biet-http-response-status-code-gGJ59NOrKX2)
 
 [requests_post](https://www.w3schools.com/python/ref_requests_post.asp)
