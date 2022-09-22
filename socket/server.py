@@ -30,6 +30,7 @@ if __name__ == "__main__":
 			while(cap.isOpened()):
 				ret,frame = cap.read()
 				data = pickle.dumps(frame)
+				print(type(data))
 				message = struct.pack("Q",len(data)) + data
 				client_socket.sendall(message)
 				cv2.imshow('TRANSMITING VIDEO',frame)
