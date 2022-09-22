@@ -29,9 +29,9 @@ if __name__ == "__main__":
 			cap = cv2.VideoCapture(0) #create a connection into webcam by opencv
 			while(cap.isOpened()):
 				ret,frame = cap.read()
-				data = pickle.dumps(frame)
-				print(type(data))
-				message = struct.pack("Q",len(data)) + data
+				data = pickle.dumps(frame) # 921762 bytes
+				message = struct.pack("Q",len(data)) + data # 921770 bytes = 8 bytes + data
+				print(f"MESSAGE: {len(message)}")
 				client_socket.sendall(message)
 				cv2.imshow('TRANSMITING VIDEO',frame)
 				key = cv2.waitKey(1) & 0xFF
