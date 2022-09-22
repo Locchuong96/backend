@@ -73,7 +73,14 @@ open local swagger api gui
 
 [Sending_and_retrieving_form_data](https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_and_retrieving_form_data)
 
-**7/ essential tutorials**
+
+**7/ Socket**
+
+[socket — Low-level networking interface](https://docs.python.org/3/library/socket.html)
+
+[python-socketio](https://python-socketio.readthedocs.io/en/latest/)
+
+**8/ essential tutorials**
 
 [Learn PostgreSQL Tutorial - Full Course for Beginners](https://www.youtube.com/watch?v=qw--VYLpxG4)
 
