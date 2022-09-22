@@ -49,19 +49,19 @@ Telephone number and extension*
 	[Socket creation] server_socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 			|
 			v
-	  [Socket bind] server_socket.bind((host_ip,port))
+	  		[Socket bind] server_socket.bind((host_ip,port))
 			|
 			V
-	 [Socket listen] server_socket.listen(5) # 5 is backlog
+	 		[Socket listen] server_socket.listen(5) # 5 is backlog
 	 		|
 	 		V
-	 [Socket accept] client_socket,addr = server_socket.accept()
+	 		[Socket accept] client_socket,addr = server_socket.accept()
 	 		|
 	 		V
-	 [Handle client] client_socket.recv() or client_socket.send() or client_socket.sendall()
+	 		[Handle client] client_socket.recv() or client_socket.send() or client_socket.sendall()
 	 		|
 	 		V
-	  [Close client] client_socket.close()
+	  		[Close client] client_socket.close()
 
 
 ### References
