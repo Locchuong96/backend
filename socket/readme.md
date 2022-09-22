@@ -44,7 +44,10 @@ Telephone number and extension*
 - Mostly used in security-related applications
 - Raw sockets are typically available in network equipments
 
-### Python Server module
+### Python Socket
+
+**Server module**
+
 
 		[Socket creation] server_socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 			|
@@ -63,10 +66,55 @@ Telephone number and extension*
 	 		V
 	  	 [Close client]   client_socket.close()
 
+**Client module**
+
+		[Socket creation] client_socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+			|
+			v
+	  	  [Socket connect]   client_socket.connect((host_ip,port))
+			|
+			V
+	 	 [Socket receive]  packet = client-socket.recv(1024) # 1024 is buffer size
+	 		|
+	 		V
+	 	[Socket send]   client_socket.send(packet)
+	 		|
+	 		V
+	  	 [Close socket]   client_socket.close()
+
+*Note size of buffer size must be from 64-1064 kB*
+
+### Video data tranmission
+
+At server side
+
+- With OpenCV get video frames of webcam
+- With `pickle` serialize frame to byte data
+- Pack each frame data using `struct` module
+- Send data to client and display frame
+
+At client side
+
+- Receive packets and append them to data
+- Unpack the data using `stuct` module
+- Load the frame unsing `pickle`
+- Display the frame at client side
+
+How to find the IP address
+
+- The IP address is IPv4 Address 
+
+- On `Windows`: `ipconfig/all`
+
+- On `Linux`: `ip addr`
+
+### Workflow 
+
+![workflow](./imgs/serverclienttcp.png)
 
 ### References
 
-[Socket programming and OpenCv in Python | webcam video transmit and receive over wifi in Python](https://www.youtube.com/watch?v=7-O7yeO3hNQ&list=PLsM05n4rlXWQCDgMkJ3col-FuhBbBUKgy&index=44)
+[Socket programming and OpenCv in Python | webcam video transmit and receive over wifi in Python](https://www.youtube.com/watch?v=7-O7yeO3hNQ&list=PLsM05n4rlXWQCDgMkJ3col-FuhBbBUKgy&index=44) | [Socket programming and OpenCv in Python](https://pyshine.com/Socket-programming-and-openc/)
 
 [Python Socket Programming Tutorial](https://www.youtube.com/watch?v=3QiPPX-KeSc&list=PLsM05n4rlXWQCDgMkJ3col-FuhBbBUKgy&index=45)
 
