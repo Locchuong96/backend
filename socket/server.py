@@ -1,42 +1,59 @@
-import cv2 # require installation
-import struct # build in function
-import pickle # build in function
-import socket # build in function
+'''
+Server handle multi clients
+'''
+import socket
+import threading
+import time
 
-port = 9999 # 4 digit-number
+HEADER = 64 # the number of byte to tell the server wait until it get enough
+FORMAT = "utf-8" # format for coding byte
+PORT = 5050 # port number
+DISCONNECT_MESSAGE = "!DISCONNECT" # content of the disconnect message, if server is received this connection, it will close the connect of that client socket and clean up everything
+HOST_NAME = socket.gethostname()
+SERVER_IP = socket.gethostbyname(HOST_NAME+".local")
+ADDR = (SERVER_IP,PORT)
+print(f"HOST_NAME: {HOST_NAME}, SERVER_IP: {SERVER_IP},ADDR: {ADDR}")
+# create a server
+server = socket.socket(socket.AF_INET,socket.SOCK_STREAM) # category of network, the way you transfer data
+server.bind(ADDR) # give the address for server socket
+
+def handle_client(client,addr):
+	'''
+	handle client socket connect to server socket
+	Args:
+		client: the client
+		addr: address of the client
+	'''
+	print(f"[NEW CONNECTION] {addr} connected.")
+	connected = True
+	while connected:
+		# Read the message length
+		msg_length = client.recv(HEADER).decode(FORMAT) # this is a blocking line of code, add how many bytes you want to receive from the arguments
+		# If you reveive something
+		if msg_length :
+		# Read until the message long as msg_length
+			if msg_length == DISCONNECT_MESSAGE:
+				connected = False # break the whule loop
+				print(f"[CLIENT-{addr}]: {DISCONNECT_MESSAGE}")
+			msg = client.recv(HEADER).decode(FORMAT)
+			print(f"[CLIENT-{addr}]: {msg}")
+			client.send("Msg received".encode(FORMAT)) # Sever send back message
+	client.close()
+
+def start(server):
+	'''
+	Function for handle new connection to server for lstening the connection and pass them into hanfle_client
+	Args:
+		server: socket server object
+	'''
+	server.listen()
+	while True:
+		client,addr = server.accept() # wait for the connection,
+		# create a thread for client connect to server 
+		thread = threading.Thread(target=handle_client,args=(client,addr))
+		thread.start()
+		print(f"[ACTIVE CONNECTIONs] {threading.activeCount()-1}") #-1 because start() is already running on a thread
 
 if __name__ == "__main__":
-	# Socket create
-	server_socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM) # create a socket server streaming type
-	host_name = socket.gethostname() # get the host name of socket
-	host_ip = socket.gethostbyname(host_name + ".local") # socket.gethostbyname(host_name) get the ip address by host name
-
-	socket_address = (host_ip,port)
-
-	# socket bind
-	server_socket.bind(socket_address)
-	print(f"Server:\nHOST_NAME: {host_name}\nHOST IP: {host_ip}\nADDRESS: {socket_address}")
-
-	# socket listen
-	server_socket.listen(5)
-	print(f"LISTENING AT:{socket_address}")
-
-	# socket accept
-	while True:
-		client_socket,addr = server_socket.accept()
-		print(f"GOT CONNECTION FROM:{addr}")
-		if client_socket:
-			cap = cv2.VideoCapture(0) #create a connection into webcam by opencv
-			while(cap.isOpened()):
-				ret,frame = cap.read()
-				data = pickle.dumps(frame) # 921762 bytes
-				message = struct.pack("Q",len(data)) + data # 921770 bytes = 8 bytes + data
-				print(f"MESSAGE: {len(message)}")
-				client_socket.sendall(message)
-				cv2.imshow('TRANSMITING VIDEO',frame)
-				key = cv2.waitKey(1) & 0xFF
-				if key == ord('q'):
-					client_socket.close()
-
-
-
+	print("[STARTING] server is starting...")
+	start(server)

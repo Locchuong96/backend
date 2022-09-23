@@ -3,7 +3,7 @@ import struct # build in function
 import pickle # build in function
 import socket # build in function
 
-port = 9999 # 4 digit-number
+port = 9999 # port number for connect to server
 
 if __name__ == "__main__":
 	# Socket create

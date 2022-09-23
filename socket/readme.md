@@ -1,3 +1,7 @@
+### Local network and Internet
+
+	`[Iternet] <-> [Modem (public IP address)] <-> [Router] <-> [Device (local IP address,IPv4)]`
+
 ### What is a network Socket
 
 - A software structure within a network node
@@ -52,7 +56,7 @@ Telephone number and extension*
 		[Socket creation] server_socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 			|
 			v
-	  	  [Socket bind]   server_socket.bind((host_ip,port))
+	  	 [Socket bind]   server_socket.bind((host_ip,port))
 			|
 			V
 	 	 [Socket listen]  server_socket.listen(5) # 5 is backlog
