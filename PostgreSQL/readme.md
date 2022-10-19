@@ -16,7 +16,7 @@
 
 7/[Setup PSQL (Windows)](/PostgreSQL/postgresql7)
 
-8/[How to Create Database](/PostgreSQL/postgresq8)
+8/[How to Create Database](/PostgreSQL/postgresql8)
 
 9/[How to Connect to Databases](/PostgreSQL/postgresql9)
 
