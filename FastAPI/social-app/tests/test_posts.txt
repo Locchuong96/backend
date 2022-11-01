@@ -1,0 +1,29 @@
+============================= test session starts ==============================
+platform linux -- Python 3.9.15, pytest-7.2.0, pluggy-1.0.0 -- /home/loc/Workspace/social-app/env/bin/python
+cachedir: .pytest_cache
+rootdir: /home/loc/Workspace/social-app
+plugins: anyio-3.6.2
+collecting ... collected 20 items
+
+tests/test_posts.py::test_get_all_posts PASSED                           [  5%]
+tests/test_posts.py::test_get_one_post PASSED                            [ 10%]
+tests/test_posts.py::test_unauthorized_user_get_all_posts PASSED         [ 15%]
+tests/test_posts.py::test_unauthorized_user_get_one_post PASSED          [ 20%]
+tests/test_posts.py::test_get_one_post_not_exist PASSED                  [ 25%]
+tests/test_posts.py::test_create_post[awesome first post-first awesome content-True] PASSED [ 30%]
+tests/test_posts.py::test_create_post[awesome second post-second awesome content-True] PASSED [ 35%]
+tests/test_posts.py::test_create_post[awesome third post-third awesome content-False] PASSED [ 40%]
+tests/test_posts.py::test_unauthorized_create_post[awesome first post-first awesome content-True] PASSED [ 45%]
+tests/test_posts.py::test_unauthorized_create_post[awesome second post-second awesome content-True] PASSED [ 50%]
+tests/test_posts.py::test_unauthorized_create_post[awesome third post-third awesome content-False] PASSED [ 55%]
+tests/test_posts.py::test_create_post_with_default_published_true PASSED [ 60%]
+tests/test_posts.py::test_delete_post PASSED                             [ 65%]
+tests/test_posts.py::test_unauthorized_user_delete_post PASSED           [ 70%]
+tests/test_posts.py::test_delete_post_non_exist PASSED                   [ 75%]
+tests/test_posts.py::test_delete_other_user_post PASSED                  [ 80%]
+tests/test_posts.py::test_update_post PASSED                             [ 85%]
+tests/test_posts.py::test_update_non_exist_post PASSED                   [ 90%]
+tests/test_posts.py::test_unauthorized_user_update_post PASSED           [ 95%]
+tests/test_posts.py::test_update_other_user_post PASSED                  [100%]
+
+============================== 20 passed in 1.50s ==============================

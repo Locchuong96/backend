@@ -1,0 +1,15 @@
+============================= test session starts ==============================
+platform linux -- Python 3.9.15, pytest-7.2.0, pluggy-1.0.0 -- /home/loc/Workspace/social-app/env/bin/python
+cachedir: .pytest_cache
+rootdir: /home/loc/Workspace/social-app
+plugins: anyio-3.6.2
+collecting ... collected 6 items
+
+tests/test_users.py::test_create_user PASSED                             [ 16%]
+tests/test_users.py::test_login_user PASSED                              [ 33%]
+tests/test_users.py::test_incorrect_login[wrongemail@email.com-pasword123-403] PASSED [ 50%]
+tests/test_users.py::test_incorrect_login[tester2@email.com-1234-403] PASSED [ 66%]
+tests/test_users.py::test_incorrect_login[None-pasword123-422] PASSED    [ 83%]
+tests/test_users.py::test_incorrect_login[tester2@email.com-None-422] PASSED [100%]
+
+============================== 6 passed in 1.56s ===============================

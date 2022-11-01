@@ -1,0 +1,35 @@
+version: "3.2"
+services:
+  api:
+    build: .
+    ports:
+      - 8000:8000
+    # env_file:
+    #   - ./.env
+    environment:
+      - DATABASE_USERNAME=postgres
+      - DATABASE_PASSWORD=admin123
+      - DATABASE_NAME=fastapi
+      - DATABASE_PORT=5432
+      - DATABASE_HOSTNAME=localhost
+      - ALGORITHM=HS256
+      - SECRET_KEY=09c47fdd132bc4c948adf7dac546c2213ab91cbdd572addbfb844aab6167d295
+      - ACCESS_TOKEN_EXPIRE_MINUTES=30
+    volumes:
+      - ./:/usr/src/app:ro # bind mount for changing source
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload # overwrite entry command, auto update changin from source
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres
+    environment:  
+      - POSTGRES_PASSWORD=admin123
+      - POSTGRES_DB=fastapi
+    volumes:
+      - postgres-db:/var/lib/postgresql/data
+    ports:
+      - 5431:5432
+volumes:
+  postgres-db:
+

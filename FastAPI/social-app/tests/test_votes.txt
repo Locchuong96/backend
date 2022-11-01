@@ -1,0 +1,15 @@
+============================= test session starts ==============================
+platform linux -- Python 3.9.15, pytest-7.2.0, pluggy-1.0.0 -- /home/loc/Workspace/social-app/env/bin/python
+cachedir: .pytest_cache
+rootdir: /home/loc/Workspace/social-app
+plugins: anyio-3.6.2
+collecting ... collected 6 items
+
+tests/test_votes.py::test_vote_up_post PASSED                            [ 16%]
+tests/test_votes.py::test_vote_twice_post PASSED                         [ 33%]
+tests/test_votes.py::test_vote_down_post PASSED                          [ 50%]
+tests/test_votes.py::test_vote_down_non_exist_post PASSED                [ 66%]
+tests/test_votes.py::test_vote_non_exist_post PASSED                     [ 83%]
+tests/test_votes.py::test_vote_unauthorized_user PASSED                  [100%]
+
+============================== 6 passed in 0.71s ===============================
