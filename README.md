@@ -94,6 +94,10 @@ open local swagger api gui
 
 [Git for Professionals Tutorial - Tools & Concepts for Mastering Version Control with Git](https://www.youtube.com/watch?v=Uszj_k0DGsg)
 
+**gRPC**
+
+[Python gRPC Tutorial](https://www.youtube.com/watch?v=WB37L7PjI5k)
+
 **references**
 
 [web-doc](https://developer.mozilla.org/en-US/)
